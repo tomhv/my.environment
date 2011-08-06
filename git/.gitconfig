@@ -1,0 +1,27 @@
+[user]
+  name = Tom Haskins-Vaughan
+  email = tom@templestreetmedia.com
+[giggle]
+  main-window-maximized = true
+  main-window-geometry = 467x238+0+24
+  history-view-vpane-position = 185
+  main-window-view = HistoryView
+  file-view-vpane-position = 460
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow 
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = green
+  changed = blue
+  untracked = red bold
