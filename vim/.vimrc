@@ -95,3 +95,13 @@ let treeExplIndent = 2
 "http://vim.sourceforge.net/scripts/script.php?script_id=13
 "Added by tom on 31 Aug 2009
 au Filetype html,xml,xsl,php,symfony,htm source $HOME/.vim/scripts/closetag.vim
+
+
+"Insert date
+:nnoremap <F2> "=strftime("%Y-%m-%d")<CR>P
+:inoremap <F2> <C-R>=strftime("%Y-%m-%d")<CR>
+
+
+"Insert datetime
+:nnoremap <F3> "=strftime("%Y-%m-%d %H:%M:%S")<CR>P
+:inoremap <F3> <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
