@@ -17,4 +17,5 @@ ENDBLUE="\e[0m"
 STARTGREEN='\e[0;32m';
 ENDGREEN="\e[0m"
 #export PS1="$STARTCOLOR\u@\h \w> $ENDCOLOR"
-export PS1="[\$(date '+%Y-%M-%d %H:%M %Z')][$STARTGREEN\u$ENDGREEN@$STARTBLUE\h$ENDBLUE \W]\$ "
+#export PS1="[\$(date '+%Y-%M-%d %H:%M %Z')][$STARTGREEN\u$ENDGREEN@$STARTBLUE\h$ENDBLUE \W]\$ "
+export PS1="[\$(date '+%Y-%M-%d %H:%M %Z')][\u@\h \W]\$ "
