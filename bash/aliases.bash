@@ -7,6 +7,8 @@ alias svnUp='svn up --ignore-externals'
 # Git
 alias gst="git status"
 alias gru="git remote update"
+alias gdl="git log --reverse master..origin/master"
+alias grudl="gru && gdl --oneline"
 
 alias ebash="sudo vim ~/.bashrc"
 alias evim="sudo vim /etc/vimrc"
