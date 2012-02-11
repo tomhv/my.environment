@@ -13,6 +13,9 @@ alias grudl="gru && gdl --oneline"
 alias ebash="sudo vim ~/.bashrc"
 alias evim="sudo vim /etc/vimrc"
 
+# Set timezone to EST
+export TZ=America/New_York
+
 # [2011-05-13 17:05 EDT][tom@tom-laptop my.environment]$
 STARTBLUE='\e[0;34m';
 ENDBLUE="\e[0m"
