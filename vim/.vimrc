@@ -94,7 +94,7 @@ let treeExplIndent = 2
 
 "Set up syntax highlighting for twig
 au BufRead,BufNewFile *.twig set syntax=htmljinja
-au BufRead,BufNewFile *.twig set filetype=html
+au BufRead,BufNewFile *.twig source $HOME/.vim/scripts/closetag.vim
 
 "Set up auto closing of tags 
 "http://vim.sourceforge.net/scripts/script.php?script_id=13
