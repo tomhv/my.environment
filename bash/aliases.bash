@@ -11,6 +11,10 @@ alias gdl="git log --reverse master..origin/master"
 alias grudl="gru && gdl --oneline"
 alias grusl="gru && git log --oneline --reverse develop..origin/develop"
 
+alias gb="git status | grep 'On branch'"
+alias gl="git log --graph --oneline"
+alias gmd="git log --oneline --reverse master..develop"
+
 alias ebash="sudo vim ~/.bashrc"
 alias evim="sudo vim /etc/vimrc"
 
