@@ -14,6 +14,12 @@ alias grusl="gru && git log --oneline --reverse develop..origin/develop"
 alias ebash="sudo vim ~/.bashrc"
 alias evim="sudo vim /etc/vimrc"
 
+# Set timezone to EST
+export TZ=America/New_York
+
+# Set vim as default editor
+export EDITOR=vim
+
 # [2011-05-13 17:05 EDT][tom@tom-laptop my.environment]$
 STARTBLUE='\e[0;34m';
 ENDBLUE="\e[0m"

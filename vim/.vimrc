@@ -91,11 +91,15 @@ let treeExplVertical = 1
 let treeExplWinSize = 45
 let treeExplIndent = 2
 
+
+"Set up syntax highlighting for twig
+au BufRead,BufNewFile *.twig set syntax=htmljinja
+au BufRead,BufNewFile *.twig source $HOME/.vim/scripts/closetag.vim
+
 "Set up auto closing of tags 
 "http://vim.sourceforge.net/scripts/script.php?script_id=13
 "Added by tom on 31 Aug 2009
 au Filetype html,xml,xsl,php,symfony,htm source $HOME/.vim/scripts/closetag.vim
-
 
 "Insert date
 :nnoremap <F2> "=strftime("%Y-%m-%d")<CR>P
