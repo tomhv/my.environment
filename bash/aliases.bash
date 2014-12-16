@@ -18,6 +18,8 @@ alias gmd="git log --oneline --reverse master..develop"
 alias ebash="sudo vim ~/.bashrc"
 alias evim="sudo vim /etc/vimrc"
 
+alias ut="phpunit -c app vendor/imc"
+
 # Set timezone to EST
 export TZ=America/New_York
 

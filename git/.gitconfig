@@ -25,3 +25,8 @@
   added = green
   changed = blue
   untracked = red bold
+
+[alias]
+  add = add -p
+[push]
+	default = simple
