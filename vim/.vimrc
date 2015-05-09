@@ -67,8 +67,8 @@ set ai " auto indent
 
 " Set tabs to spaces
 set et
-set sw=2
-set sts=2
+set sw=4
+set sts=4
 set smarttab
 
 let php_folding = 1
