@@ -32,3 +32,6 @@ ENDGREEN="\e[0m"
 #export PS1="$STARTCOLOR\u@\h \w> $ENDCOLOR"
 #export PS1="[\$(date '+%Y-%M-%d %H:%M %Z')][$STARTGREEN\u$ENDGREEN@$STARTBLUE\h$ENDBLUE \W]\$ "
 export PS1="[\$(date '+%Y-%M-%d %H:%M %Z')][\u@\h \W]\$ "
+
+# For executing commands like Symfony's console
+export PATH=$PATH:./bin
