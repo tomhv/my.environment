@@ -10,6 +10,7 @@ alias gru="git remote update"
 alias gdl="git log --reverse master..origin/master"
 alias grudl="gru && gdl --oneline"
 alias grusl="gru && git log --oneline --reverse develop..origin/develop"
+alias gt="git tag | sort -V"
 
 alias gb="git status | grep 'On branch'"
 alias gl="git log --graph --oneline"

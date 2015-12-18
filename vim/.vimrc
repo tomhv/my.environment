@@ -92,7 +92,7 @@ nnoremap <silent> <space> :exe 'silent! normal! za'.(foldlevel('.')?'':'l')<cr>
 "Added by tom on 31 Aug 2009
 let treeExplVertical = 1
 let treeExplIndent = 4
-let treeExplWinSize = 28
+let treeExplWinSize = 45
 
 "Set up syntax highlighting for twig
 au BufRead,BufNewFile *.twig set syntax=htmljinja
