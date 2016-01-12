@@ -20,6 +20,7 @@ alias ebash="sudo vim ~/.bashrc"
 alias evim="sudo vim /etc/vimrc"
 
 alias ut="phpunit -c app vendor/imc"
+alias lut="./vendor/bin/phpunit --colors tests"
 
 # Set timezone to EST
 export TZ=America/New_York
