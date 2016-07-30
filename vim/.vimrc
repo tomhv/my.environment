@@ -125,3 +125,5 @@ au Filetype html,xml,xsl,php,symfony,htm source $HOME/.vim/scripts/closetag.vim
 "Toggle paste/nopaste
 nnoremap <F9> :set invpaste paste?<CR>
 "inoremap <F9> <C-O>:set invpaste paste?<CR>
+
+colorscheme default
