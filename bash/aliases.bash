@@ -1,4 +1,4 @@
-alias vim='vim -c VSTreeExplore'
+alias vim='vim -c NERDTree'
 
 # Subversion
 alias st='svn st --ignore-externals'
