@@ -29,8 +29,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'mattn/emmet-vim'
-Plug 'vim-scripts/quickbuf'
 Plug 'ervandew/supertab'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim'
+Plug 'vim-scripts/quickbuf'
 call plug#end()
 
 
@@ -91,6 +92,7 @@ let g:user_emmet_settings = {
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Show hidden files on opening vim
 let NERDTreeShowHidden=1
+map <F7> :NERDTreeToggle<CR>
 
 " Highlight cursor line in NERDTree 233 = #121212
 hi CursorLine cterm=NONE ctermbg=233 guibg=233
