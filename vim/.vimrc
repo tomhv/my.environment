@@ -28,6 +28,7 @@ set listchars=trail:-
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'mattn/emmet-vim'
+Plug 'vim-scripts/QuickBuf'
 call plug#end()
 
 
