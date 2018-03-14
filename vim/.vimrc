@@ -27,6 +27,7 @@ set listchars=trail:-
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 
@@ -60,5 +61,20 @@ au Filetype html,xml,xsl,php,symfony,htm,twig source $HOME/.vim/scripts/closetag
 
 "Toggle paste/nopaste
 nnoremap <F9> :set invpaste paste?<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""     Emmet
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:silent nmap <F12> <C-z>,
+:silent imap <F12> <C-z>,
+vmap <F12> <C-z>,
+let g:user_emmet_install_global = 0
+let g:user_emmet_leader_key='<C-Z>'
+autocmd FileType html,css,twig,htmldjango.twig EmmetInstall
+let g:user_emmet_settings = {
+\  'html' : {
+\      'comment_type': 'lastonly',
+\  },
+\}
 
 colorscheme default
