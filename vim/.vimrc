@@ -23,6 +23,14 @@ set incsearch
 set list
 set listchars=trail:-
 
+
+
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
+
+
+
 " Set space to toggle fold/unfold
 nnoremap <silent> <space> :exe 'silent! normal! za'.(foldlevel('.')?'':'l')<cr>
 
@@ -45,10 +53,10 @@ au Filetype html,xml,xsl,php,symfony,htm,twig source $HOME/.vim/scripts/closetag
 :inoremap <F3> <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
 
 "Navigation between windows
-:silent nmap <C-LEFT>  :wincmd h<CR>
-:silent nmap <C-DOWN>  :wincmd j<CR>
-:silent nmap <C-UP>    :wincmd k<CR>
-:silent nmap <C-RIGHT> :wincmd l<CR>
+:silent nmap <C-h>  :wincmd h<CR>
+:silent nmap <C-j>  :wincmd j<CR>
+:silent nmap <C-k>    :wincmd k<CR>
+:silent nmap <C-l> :wincmd l<CR>
 
 "Toggle paste/nopaste
 nnoremap <F9> :set invpaste paste?<CR>
