@@ -28,7 +28,8 @@ set listchars=trail:-
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'mattn/emmet-vim'
-Plug 'vim-scripts/QuickBuf'
+Plug 'vim-scripts/quickbuf'
+Plug 'ervandew/supertab'
 call plug#end()
 
 
@@ -77,5 +78,14 @@ let g:user_emmet_settings = {
 \      'comment_type': 'lastonly',
 \  },
 \}
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""     NERDTree
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show hidden files on opening vim
+let NERDTreeShowHidden=1
+
+" Highlight cursor line in NERDTree 233 = #121212
+hi CursorLine cterm=NONE ctermbg=233 guibg=233
 
 colorscheme default
