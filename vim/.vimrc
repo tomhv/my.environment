@@ -64,6 +64,8 @@ au Filetype html,xml,xsl,php,symfony,htm,twig source $HOME/.vim/scripts/closetag
 "Toggle paste/nopaste
 nnoremap <F9> :set invpaste paste?<CR>
 
+colorscheme default
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""     Emmet
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -87,5 +89,3 @@ let NERDTreeShowHidden=1
 
 " Highlight cursor line in NERDTree 233 = #121212
 hi CursorLine cterm=NONE ctermbg=233 guibg=233
-
-colorscheme default
