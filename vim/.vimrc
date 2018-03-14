@@ -61,10 +61,14 @@ au Filetype html,xml,xsl,php,symfony,htm,twig source $HOME/.vim/scripts/closetag
 :silent nmap <C-k>    :wincmd k<CR>
 :silent nmap <C-l> :wincmd l<CR>
 
-"Toggle paste/nopaste
+" Toggle paste/nopaste
 nnoremap <F9> :set invpaste paste?<CR>
 
 colorscheme default
+
+" Show lines over 80 chars
+hi LineTooLong ctermbg=236
+match LineTooLong /\%>80v.\+/
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""     Emmet
