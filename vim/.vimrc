@@ -31,6 +31,8 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'mattn/emmet-vim'
 Plug 'ervandew/supertab'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'vim-scripts/quickbuf'
 call plug#end()
 
