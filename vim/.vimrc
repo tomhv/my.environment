@@ -35,10 +35,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'vim-scripts/quickbuf'
 call plug#end()
-
-
 
 " Set space to toggle fold/unfold
 nnoremap <silent> <space> :exe 'silent! normal! za'.(foldlevel('.')?'':'l')<cr>
@@ -105,3 +102,8 @@ hi CursorLine cterm=NONE ctermbg=233 guibg=233
 ""     Airline
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_theme='angr'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""     CtrlP
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:nnoremap <F4> :CtrlPBuffer<CR>
