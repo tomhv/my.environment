@@ -81,7 +81,7 @@ match LineTooLong /\%>80v.\+/
 vmap <F12> <C-z>,
 let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key='<C-Z>'
-autocmd FileType html,css,twig,htmldjango.twig EmmetInstall
+autocmd FileType html,css,twig,javascript.jsx EmmetInstall
 let g:user_emmet_settings = {
 \  'html' : {
 \      'comment_type': 'lastonly',
@@ -107,3 +107,4 @@ let g:airline_theme='angr'
 ""     CtrlP
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 :nnoremap <F4> :CtrlPBuffer<CR>
+:nnoremap <F5> :CtrlPMRUFiles<CR>

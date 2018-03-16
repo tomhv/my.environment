@@ -28,6 +28,10 @@ export TZ=America/New_York
 # Set vim as default editor
 export EDITOR=vim
 
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/:\1/'
+}
+
 # [2011-05-13 17:05 EDT][tom@tom-laptop my.environment]$
 STARTBLUE='\e[0;34m';
 ENDBLUE="\e[0m"
@@ -56,7 +60,12 @@ BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 #export PS1="$STARTCOLOR\u@\h \w> $ENDCOLOR"
 #export PS1="[\$(date '+%Y-%M-%d %H:%M %Z')][$STARTGREEN\u$ENDGREEN@$STARTBLUE\h$ENDBLUE \W]\$ "
-export PS1="[$FGRN\$(date '+%Y-%m-%d %H:%M %Z')$RS][$FGRN\u$RS@\[\033[34m\]\h\[\033[0m\] $FGRN\W$RS]\$ "
+export PS1="[\
+$FGRN\$(date '+%Y-%m-%d %H:%M%Z')$RS \
+$FGRN\u$RS@\[\033[34m\]\h\[\033[0m\] \
+$FGRN\W$RS\[\033[34m\]\
+\$(parse_git_branch)\[\033[0m\]]\
+\$ "
 
 # For executing commands like Symfony's console
 export PATH=$PATH:./bin
