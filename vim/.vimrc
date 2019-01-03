@@ -28,8 +28,8 @@ set listchars=trail:-
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'xuyuanp/nerdtree-git-plugin'
-Plug 'mattn/emmet-vim'
-Plug 'ervandew/supertab'
+"Plug 'mattn/emmet-vim'
+"Plug 'ervandew/supertab'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -71,17 +71,17 @@ match LineTooLong /\%>80v.\+/
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""     Emmet
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
-:silent nmap <F12> <C-z>,
-:silent imap <F12> <C-z>,
-vmap <F12> <C-z>,
-let g:user_emmet_install_global = 0
-let g:user_emmet_leader_key='<C-Z>'
-autocmd FileType html,css,twig,javascript.jsx EmmetInstall
-let g:user_emmet_settings = {
-\  'html' : {
-\      'comment_type': 'lastonly',
-\  },
-\}
+"   :silent nmap <F12> <C-z>,
+"   :silent imap <F12> <C-z>,
+"   vmap <F12> <C-z>,
+"   let g:user_emmet_install_global = 0
+"   let g:user_emmet_leader_key='<C-Z>'
+"   autocmd FileType html,css,twig,javascript.jsx EmmetInstall
+"   let g:user_emmet_settings = {
+"   \  'html' : {
+"   \      'comment_type': 'lastonly',
+"   \  },
+"   \}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""     NERDTree
