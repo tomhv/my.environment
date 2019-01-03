@@ -53,11 +53,6 @@ au Filetype html,xml,xsl,php,symfony,htm,twig source $HOME/.vim/scripts/closetag
 :nnoremap <F2> "=strftime("%Y-%m-%d")<CR>P
 :inoremap <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 
-
-"Insert datetime
-:nnoremap <F3> "=strftime("%Y-%m-%d %H:%M:%S")<CR>P
-:inoremap <F3> <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
-
 "Navigation between windows
 :silent nmap <C-h>  :wincmd h<CR>
 :silent nmap <C-j>  :wincmd j<CR>
