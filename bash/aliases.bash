@@ -3,14 +3,10 @@ alias vim='vim -c NERDTree'
 # Git
 alias gst="git status"
 alias gru="git remote update"
-alias gdl="git log --reverse master..origin/master"
-alias grudl="gru && gdl --oneline"
-alias grusl="gru && git log --oneline --reverse develop..origin/develop"
 alias gt="git tag | sort -V"
 
 alias gb="git status | grep 'On branch'"
 alias gl="git log --graph --pretty=\"%C(green)%h%Creset %C(blue)%ae%Creset %s %C(bold blue)%ar%Creset\""
-alias gmd="git log --oneline --reverse master..develop"
 
 alias ebash="sudo vim ~/.bashrc"
 alias evim="sudo vim /etc/vimrc"
