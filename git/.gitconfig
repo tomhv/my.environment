@@ -1,12 +1,6 @@
 [user]
   name = Tom Haskins-Vaughan
   email = tomhv@janeiredale.com
-[giggle]
-  main-window-maximized = true
-  main-window-geometry = 467x238+0+24
-  history-view-vpane-position = 185
-  main-window-view = HistoryView
-  file-view-vpane-position = 460
 
 [color]
   branch = auto
@@ -29,4 +23,4 @@
 [alias]
   add = add -p
 [push]
-	default = simple
+  default = simple
