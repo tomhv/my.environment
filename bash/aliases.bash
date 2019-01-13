@@ -8,12 +8,6 @@ alias gt="git tag | sort -V"
 alias gb="git status | grep 'On branch'"
 alias gl="git log --graph --pretty=\"%C(green)%h%Creset %C(blue)%ae%Creset %s %C(bold blue)%ar%Creset\""
 
-alias ebash="sudo vim ~/.bashrc"
-alias evim="sudo vim /etc/vimrc"
-
-alias ut="phpunit -c app vendor/imc"
-alias lut="./vendor/bin/phpunit --coverage-text --colors tests"
-
 # Set timezone to EST
 export TZ=America/New_York
 
