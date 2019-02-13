@@ -65,10 +65,10 @@ nnoremap <F9> :set invpaste paste?<CR>
 colorscheme desert
 
 " Highlight cursor line in NERDTree 233 = #121212
-hi CursorLine cterm=NONE ctermbg=233 guibg=233
+hi CursorLine cterm=NONE ctermbg=DarkGray guibg=DarkGray
 
 " Show lines over 80 chars
-hi LineTooLong ctermbg=236
+hi LineTooLong ctermbg=DarkGray
 match LineTooLong /\%>80v.\+/
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -142,3 +142,18 @@ vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>
 " Add the following to your .vimrc in order to use Phpactor for omni-completion
 " (for PHP files):
 autocmd FileType php setlocal omnifunc=phpactor#Complete
+
+
+
+
+
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
